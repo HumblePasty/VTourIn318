@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>krpano - IMG_5473</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport {
+			width: device-width;
+		}
+
+		@media only screen and (min-device-width:800px) {
+			html {
+				overflow: hidden;
+			}
+		}
+
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: #FFFFFF;
+			background-color: #000000;
+		}
+		.button {
+			display: inline-block;
+			border: 1px solid sliver;
+			border-radius: 1px;
+			cursor: pointer;
+			padding: 4px 8px;
+			margin: 4px 0;
+			user-select: none;
+			-moz-user-select: none;
+		}
+
+		.button:hover {
+			background-color: #EEEEEE;
+		}
+
+		#buttongroup{
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			border: solid 1px silver;
+		}
+	</style>
+</head>
+
+<body>
+
+	<script src="tour.js"></script>
+
+	<div id="pano" style="width:100%;height:100%;">
+		<noscript>
+			<table style="width:100%;height:100%;">
+				<tr style="vertical-align:middle;">
+					<td>
+						<div style="text-align:center;">ERROR:<br /><br />Javascript not activated<br /><br /></div>
+					</td>
+				</tr>
+			</table>
+		</noscript>
+	</div>
+
+	<div id="buttongroup">
+		<div id="hs_info"></div>
+		<div id="add_hs" class="button" onclick="add_hotspot();">Add Comment</div>
+		<div id="edit_hs" class="button" onclick="edit_hotspot()">Edit Comment</div>
+		<div id="rmv_hs" class="button" onclick="remove_one_hotspot();">Remove Comment</div>
+		<div class="button" onclick="remove_all_hotspots();">Remove All</div>
+		<div id="show_coords" class="button" onclick="track_mouse();">Show Coord</div>
+		<span id="mousepos"
+			style="padding-left:16px; font-family:monospace;">
+		</span>
+	</div>
+	
+	<br>
+
+	<script src="./krpano.js"></script>
+
+	<script src="./theboard.js"></script>
+
+	<br>
+
+</body>
+
+</html>
