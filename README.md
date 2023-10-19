@@ -12,4 +12,4 @@ using krpano
 
 A secondary development was conducted to enable marker-adding and message leaving on the Panoramic Map
 
-[Click to Redirect](https://rsdonkey.github.io/VTourIn318/vtour.html)
+[Click to Redirect](https://humblepasty.github.io/VTourIn318/vtour.html)
